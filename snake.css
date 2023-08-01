@@ -1,0 +1,54 @@
+*{  padding: 0;
+    margin: 0;
+}
+.body{
+    background: url(wp3906251-snake-game-wallpapers.jpg);
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#board{
+    background: linear-gradient(rgb(75, 75, 204),rgb(233, 233, 13));
+    width: 90vmin;height: 90vmin;
+    border: 2px solid black;
+    display: grid;
+    grid-template-rows: repeat(18,1fr);
+    grid-template-columns: repeat(18,1fr);
+}
+.head{
+    background:linear-gradient(red,blue );
+    border:1px solid black;
+    border-radius: 10px;
+}
+#scorebox{
+   
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-size: 30px;
+    font-weight: bold ;
+    font-family: 'Bungee Spice', cursive;
+
+}
+#highscorebox{
+    position: absolute;
+    top: 50px;
+    right: 150px;
+    font-size: 30px;
+    font-weight: bold ;
+    font-family: 'Bungee Spice', cursive;
+}
+
+.snake{
+    background-color: blue;
+    border:.25vmin solid white;
+    border-radius: 15px;
+}
+.food{
+    background-color: red;
+    border-radius:20px ;
+    
+}
